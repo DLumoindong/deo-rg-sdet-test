@@ -73,5 +73,3 @@ function dualTest(inp1, inp2){
         comparator(array1[j], array2[j]) //take inputs from both input arrays
     }
 }
-
-dualTest('File1.txt','File2.txt')
