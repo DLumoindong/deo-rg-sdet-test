@@ -1,0 +1,1 @@
+python -m robot -d results Tests/Parabank.robot

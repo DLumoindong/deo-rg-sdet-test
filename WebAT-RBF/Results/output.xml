@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.7.9 on win32)" generated="20211029 22:35:26.209" rpa="false" schemaversion="2">
+<suite id="s1" name="rgWebAT" source="H:\development\deo-rg-sdet-test\WebAT\tests\rgWebAT.robot">
+<test id="s1-t1" name="Check filter features">
+<kw name="Begin Web Test" library="globalkey" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211029 22:35:26.433" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20211029 22:35:26.433" endtime="20211029 22:35:27.508"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211029 22:35:27.508" endtime="20211029 22:35:27.617"/>
+</kw>
+<status status="PASS" starttime="20211029 22:35:26.433" endtime="20211029 22:35:27.617"/>
+</kw>
+<kw name="Homepage" library="Actions">
+<kw name="Open" library="Homepage">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://skillacademy.com/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20211029 22:35:27.619" level="INFO">Opening url 'https://skillacademy.com/'</msg>
+<status status="PASS" starttime="20211029 22:35:27.618" endtime="20211029 22:35:32.162"/>
+</kw>
+<status status="PASS" starttime="20211029 22:35:27.618" endtime="20211029 22:35:32.162"/>
+</kw>
+<kw name="Check Page Loaded" library="Homepage">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="main-scrollview"]/div/div[2]/div[1]/div/img</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20211029 22:35:32.162" endtime="20211029 22:35:32.179"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211029 22:35:33.180" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211029 22:35:32.179" endtime="20211029 22:35:33.180"/>
+</kw>
+<status status="PASS" starttime="20211029 22:35:32.162" endtime="20211029 22:35:33.180"/>
+</kw>
+<status status="PASS" starttime="20211029 22:35:27.618" endtime="20211029 22:35:33.181"/>
+</kw>
+<kw name="Filter" library="Actions">
+<kw name="Price1" library="Filter">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${SearchBox}</arg>
+<arg>${EMPTY}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211029 22:35:33.183" level="INFO">Typing text '' into text field '//*[@id="root"]/div/div[1]/div/div/div[3]/div/div[1]/div/input'.</msg>
+<status status="PASS" starttime="20211029 22:35:33.183" endtime="20211029 22:35:33.264"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${SearchBox}</arg>
+<arg>${SortKeyword}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211029 22:35:33.265" level="INFO">Typing text 'Bahasa' into text field '//*[@id="root"]/div/div[1]/div/div/div[3]/div/div[1]/div/input'.</msg>
+<status status="PASS" starttime="20211029 22:35:33.265" endtime="20211029 22:35:33.322"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SearchBtn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211029 22:35:33.323" level="INFO">Clicking element '//*[@id="root"]/div/div[1]/div/div/div[3]/div/div[2]/img'.</msg>
+<status status="PASS" starttime="20211029 22:35:33.322" endtime="20211029 22:35:33.418"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${FirstSearchRes}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20211029 22:35:33.418" endtime="20211029 22:35:33.818"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${FilterField}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211029 22:35:33.819" level="INFO">Clicking element '//*[@id="main-scrollview"]/div/div[1]/div/div/div[1]/div/div/div[1]/div/div/div[1]'.</msg>
+<status status="PASS" starttime="20211029 22:35:33.818" endtime="20211029 22:35:33.912"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${FilterField}</arg>
+<arg>DOWN</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20211029 22:35:33.913" level="INFO">Sending key(s) ('DOWN', 'ENTER') to //*[@id="main-scrollview"]/div/div[1]/div/div/div[1]/div/div/div[1]/div/div/div[1] element.</msg>
+<msg timestamp="20211029 22:35:34.244" level="INFO">Pressing special key DOWN to element.</msg>
+<msg timestamp="20211029 22:35:34.244" level="INFO">Releasing special key DOWN.</msg>
+<msg timestamp="20211029 22:35:34.254" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20211029 22:35:34.254" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20211029 22:35:33.913" endtime="20211029 22:35:34.371"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${FirstSearchRes}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20211029 22:35:34.371" endtime="20211029 22:35:34.996"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Price1}</var>
+<arg>${PriceWrapper1}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20211029 22:35:35.016" level="INFO">${Price1} = Rp 31.000</msg>
+<status status="PASS" starttime="20211029 22:35:34.996" endtime="20211029 22:35:35.016"/>
+</kw>
+<kw name="Remove String" library="String">
+<var>${Price1}</var>
+<arg>${Price1}</arg>
+<arg>R</arg>
+<arg>p</arg>
+<arg>.</arg>
+<doc>Removes all ``removables`` from the given ``string``.</doc>
+<msg timestamp="20211029 22:35:35.017" level="INFO">${Price1} =  31000</msg>
+<status status="PASS" starttime="20211029 22:35:35.017" endtime="20211029 22:35:35.017"/>
+</kw>
+<kw name="Convert To Number" library="BuiltIn">
+<var>${Price1}</var>
+<arg>${Price1}</arg>
+<doc>Converts the given item to a floating point number.</doc>
+<msg timestamp="20211029 22:35:35.018" level="INFO">${Price1} = 31000.0</msg>
+<status status="PASS" starttime="20211029 22:35:35.017" endtime="20211029 22:35:35.018"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${Price1} &lt;= 100000</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20211029 22:35:35.018" endtime="20211029 22:35:35.018"/>
+</kw>
+<status status="PASS" starttime="20211029 22:35:33.182" endtime="20211029 22:35:35.018"/>
+</kw>
+<kw name="Price2" library="Filter">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${SearchBox}</arg>
+<arg>${EMPTY}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211029 22:35:35.020" level="INFO">Typing text '' into text field '//*[@id="root"]/div/div[1]/div/div/div[3]/div/div[1]/div/input'.</msg>
+<status status="PASS" starttime="20211029 22:35:35.019" endtime="20211029 22:35:35.077"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${SearchBox}</arg>
+<arg>${SortKeyword}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211029 22:35:35.078" level="INFO">Typing text 'Bahasa' into text field '//*[@id="root"]/div/div[1]/div/div/div[3]/div/div[1]/div/input'.</msg>
+<status status="PASS" starttime="20211029 22:35:35.077" endtime="20211029 22:35:35.119"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SearchBtn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211029 22:35:35.120" level="INFO">Clicking element '//*[@id="root"]/div/div[1]/div/div/div[3]/div/div[2]/img'.</msg>
+<status status="PASS" starttime="20211029 22:35:35.119" endtime="20211029 22:35:35.209"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${FirstSearchRes}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20211029 22:35:35.210" endtime="20211029 22:35:35.509"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${FilterField}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211029 22:35:35.510" level="INFO">Clicking element '//*[@id="main-scrollview"]/div/div[1]/div/div/div[1]/div/div/div[1]/div/div/div[1]'.</msg>
+<status status="PASS" starttime="20211029 22:35:35.509" endtime="20211029 22:35:35.554"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${FilterField}</arg>
+<arg>DOWN</arg>
+<arg>DOWN</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20211029 22:35:35.555" level="INFO">Sending key(s) ('DOWN', 'DOWN', 'ENTER') to //*[@id="main-scrollview"]/div/div[1]/div/div/div[1]/div/div/div[1]/div/div/div[1] element.</msg>
+<msg timestamp="20211029 22:35:35.842" level="INFO">Pressing special key DOWN to element.</msg>
+<msg timestamp="20211029 22:35:35.842" level="INFO">Releasing special key DOWN.</msg>
+<msg timestamp="20211029 22:35:35.848" level="INFO">Pressing special key DOWN to element.</msg>
+<msg timestamp="20211029 22:35:35.848" level="INFO">Releasing special key DOWN.</msg>
+<msg timestamp="20211029 22:35:35.856" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20211029 22:35:35.856" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20211029 22:35:35.554" endtime="20211029 22:35:35.953"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${FirstSearchRes}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20211029 22:35:35.954" endtime="20211029 22:35:36.166"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Price1}</var>
+<arg>${PriceWrapper1}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20211029 22:35:36.182" level="INFO">${Price1} = Rp 149.000</msg>
+<status status="PASS" starttime="20211029 22:35:36.167" endtime="20211029 22:35:36.182"/>
+</kw>
+<kw name="Remove String" library="String">
+<var>${Price1}</var>
+<arg>${Price1}</arg>
+<arg>R</arg>
+<arg>p</arg>
+<arg>.</arg>
+<doc>Removes all ``removables`` from the given ``string``.</doc>
+<msg timestamp="20211029 22:35:36.183" level="INFO">${Price1} =  149000</msg>
+<status status="PASS" starttime="20211029 22:35:36.182" endtime="20211029 22:35:36.183"/>
+</kw>
+<kw name="Convert To Number" library="BuiltIn">
+<var>${Price1}</var>
+<arg>${Price1}</arg>
+<doc>Converts the given item to a floating point number.</doc>
+<msg timestamp="20211029 22:35:36.183" level="INFO">${Price1} = 149000.0</msg>
+<status status="PASS" starttime="20211029 22:35:36.183" endtime="20211029 22:35:36.183"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${Price1} &gt;= 100000</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20211029 22:35:36.183" endtime="20211029 22:35:36.184"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${Price1} &lt;= 149999</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20211029 22:35:36.184" endtime="20211029 22:35:36.184"/>
+</kw>
+<status status="PASS" starttime="20211029 22:35:35.018" endtime="20211029 22:35:36.184"/>
+</kw>
+<kw name="Price3" library="Filter">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${SearchBox}</arg>
+<arg>${EMPTY}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211029 22:35:36.185" level="INFO">Typing text '' into text field '//*[@id="root"]/div/div[1]/div/div/div[3]/div/div[1]/div/input'.</msg>
+<status status="PASS" starttime="20211029 22:35:36.184" endtime="20211029 22:35:36.223"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${SearchBox}</arg>
+<arg>${SortKeyword}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211029 22:35:36.223" level="INFO">Typing text 'Bahasa' into text field '//*[@id="root"]/div/div[1]/div/div/div[3]/div/div[1]/div/input'.</msg>
+<status status="PASS" starttime="20211029 22:35:36.223" endtime="20211029 22:35:36.262"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SearchBtn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211029 22:35:36.263" level="INFO">Clicking element '//*[@id="root"]/div/div[1]/div/div/div[3]/div/div[2]/img'.</msg>
+<status status="PASS" starttime="20211029 22:35:36.262" endtime="20211029 22:35:36.334"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${FirstSearchRes}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20211029 22:35:36.334" endtime="20211029 22:35:36.959"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${FilterField}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211029 22:35:36.960" level="INFO">Clicking element '//*[@id="main-scrollview"]/div/div[1]/div/div/div[1]/div/div/div[1]/div/div/div[1]'.</msg>
+<status status="PASS" starttime="20211029 22:35:36.960" endtime="20211029 22:35:37.003"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${FilterField}</arg>
+<arg>DOWN</arg>
+<arg>DOWN</arg>
+<arg>DOWN</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20211029 22:35:37.003" level="INFO">Sending key(s) ('DOWN', 'DOWN', 'DOWN', 'ENTER') to //*[@id="main-scrollview"]/div/div[1]/div/div/div[1]/div/div/div[1]/div/div/div[1] element.</msg>
+<msg timestamp="20211029 22:35:37.295" level="INFO">Pressing special key DOWN to element.</msg>
+<msg timestamp="20211029 22:35:37.295" level="INFO">Releasing special key DOWN.</msg>
+<msg timestamp="20211029 22:35:37.303" level="INFO">Pressing special key DOWN to element.</msg>
+<msg timestamp="20211029 22:35:37.303" level="INFO">Releasing special key DOWN.</msg>
+<msg timestamp="20211029 22:35:37.308" level="INFO">Pressing special key DOWN to element.</msg>
+<msg timestamp="20211029 22:35:37.309" level="INFO">Releasing special key DOWN.</msg>
+<msg timestamp="20211029 22:35:37.313" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20211029 22:35:37.313" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20211029 22:35:37.003" endtime="20211029 22:35:37.408"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${FirstSearchRes}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20211029 22:35:37.408" endtime="20211029 22:35:37.645"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Price1}</var>
+<arg>${PriceWrapper1}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20211029 22:35:37.662" level="INFO">${Price1} = Rp 187.000</msg>
+<status status="PASS" starttime="20211029 22:35:37.645" endtime="20211029 22:35:37.662"/>
+</kw>
+<kw name="Remove String" library="String">
+<var>${Price1}</var>
+<arg>${Price1}</arg>
+<arg>R</arg>
+<arg>p</arg>
+<arg>.</arg>
+<doc>Removes all ``removables`` from the given ``string``.</doc>
+<msg timestamp="20211029 22:35:37.663" level="INFO">${Price1} =  187000</msg>
+<status status="PASS" starttime="20211029 22:35:37.663" endtime="20211029 22:35:37.663"/>
+</kw>
+<kw name="Convert To Number" library="BuiltIn">
+<var>${Price1}</var>
+<arg>${Price1}</arg>
+<doc>Converts the given item to a floating point number.</doc>
+<msg timestamp="20211029 22:35:37.663" level="INFO">${Price1} = 187000.0</msg>
+<status status="PASS" starttime="20211029 22:35:37.663" endtime="20211029 22:35:37.663"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${Price1} &gt;= 150000</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20211029 22:35:37.663" endtime="20211029 22:35:37.663"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${Price1} &lt;= 200000</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20211029 22:35:37.663" endtime="20211029 22:35:37.664"/>
+</kw>
+<status status="PASS" starttime="20211029 22:35:36.184" endtime="20211029 22:35:37.664"/>
+</kw>
+<kw name="Price4" library="Filter">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${SearchBox}</arg>
+<arg>${EMPTY}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211029 22:35:37.666" level="INFO">Typing text '' into text field '//*[@id="root"]/div/div[1]/div/div/div[3]/div/div[1]/div/input'.</msg>
+<status status="PASS" starttime="20211029 22:35:37.665" endtime="20211029 22:35:37.724"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${SearchBox}</arg>
+<arg>${SortKeyword}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211029 22:35:37.725" level="INFO">Typing text 'Bahasa' into text field '//*[@id="root"]/div/div[1]/div/div/div[3]/div/div[1]/div/input'.</msg>
+<status status="PASS" starttime="20211029 22:35:37.725" endtime="20211029 22:35:37.764"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SearchBtn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211029 22:35:37.764" level="INFO">Clicking element '//*[@id="root"]/div/div[1]/div/div/div[3]/div/div[2]/img'.</msg>
+<status status="PASS" starttime="20211029 22:35:37.764" endtime="20211029 22:35:37.852"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${FirstSearchRes}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20211029 22:35:37.852" endtime="20211029 22:35:38.477"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${FilterField}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211029 22:35:38.477" level="INFO">Clicking element '//*[@id="main-scrollview"]/div/div[1]/div/div/div[1]/div/div/div[1]/div/div/div[1]'.</msg>
+<status status="PASS" starttime="20211029 22:35:38.477" endtime="20211029 22:35:38.518"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${FilterField}</arg>
+<arg>DOWN</arg>
+<arg>DOWN</arg>
+<arg>DOWN</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20211029 22:35:38.519" level="INFO">Sending key(s) ('DOWN', 'DOWN', 'DOWN', 'ENTER') to //*[@id="main-scrollview"]/div/div[1]/div/div/div[1]/div/div/div[1]/div/div/div[1] element.</msg>
+<msg timestamp="20211029 22:35:38.808" level="INFO">Pressing special key DOWN to element.</msg>
+<msg timestamp="20211029 22:35:38.808" level="INFO">Releasing special key DOWN.</msg>
+<msg timestamp="20211029 22:35:38.817" level="INFO">Pressing special key DOWN to element.</msg>
+<msg timestamp="20211029 22:35:38.817" level="INFO">Releasing special key DOWN.</msg>
+<msg timestamp="20211029 22:35:38.823" level="INFO">Pressing special key DOWN to element.</msg>
+<msg timestamp="20211029 22:35:38.823" level="INFO">Releasing special key DOWN.</msg>
+<msg timestamp="20211029 22:35:38.828" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20211029 22:35:38.828" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20211029 22:35:38.518" endtime="20211029 22:35:38.921"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${FirstSearchRes}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20211029 22:35:38.921" endtime="20211029 22:35:39.152"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Price1}</var>
+<arg>${PriceWrapper1}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20211029 22:35:39.168" level="INFO">${Price1} = Rp 187.000</msg>
+<status status="PASS" starttime="20211029 22:35:39.152" endtime="20211029 22:35:39.168"/>
+</kw>
+<kw name="Remove String" library="String">
+<var>${Price1}</var>
+<arg>${Price1}</arg>
+<arg>R</arg>
+<arg>p</arg>
+<arg>.</arg>
+<doc>Removes all ``removables`` from the given ``string``.</doc>
+<msg timestamp="20211029 22:35:39.169" level="INFO">${Price1} =  187000</msg>
+<status status="PASS" starttime="20211029 22:35:39.168" endtime="20211029 22:35:39.169"/>
+</kw>
+<kw name="Convert To Number" library="BuiltIn">
+<var>${Price1}</var>
+<arg>${Price1}</arg>
+<doc>Converts the given item to a floating point number.</doc>
+<msg timestamp="20211029 22:35:39.169" level="INFO">${Price1} = 187000.0</msg>
+<status status="PASS" starttime="20211029 22:35:39.169" endtime="20211029 22:35:39.169"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${Price1} &lt; 200000</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20211029 22:35:39.169" endtime="20211029 22:35:39.169"/>
+</kw>
+<status status="PASS" starttime="20211029 22:35:37.664" endtime="20211029 22:35:39.169"/>
+</kw>
+<status status="PASS" starttime="20211029 22:35:33.181" endtime="20211029 22:35:39.169"/>
+</kw>
+<kw name="End Web Test" library="globalkey" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211029 22:35:39.170" endtime="20211029 22:35:41.324"/>
+</kw>
+<status status="PASS" starttime="20211029 22:35:39.170" endtime="20211029 22:35:41.324"/>
+</kw>
+<tag>Smoke</tag>
+<status status="PASS" starttime="20211029 22:35:26.433" endtime="20211029 22:35:41.325"/>
+</test>
+<doc>Search Feature Web Tests</doc>
+<status status="PASS" starttime="20211029 22:35:26.210" endtime="20211029 22:35:41.327"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="rgWebAT">rgWebAT</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
