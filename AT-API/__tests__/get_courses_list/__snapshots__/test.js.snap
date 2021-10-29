@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@skillAcademyWeb @negative Get List of Courses As a Guest, I should not be able to see the list of available courses with invalid maximum price input 1`] = `
+Object {
+  "-": 13,
+  "errorCode": 99996,
+  "message": "Error Bad Request",
+}
+`;
+
+exports[`@skillAcademyWeb @negative Get List of Courses As a Guest, I should not be able to see the list of available courses with invalid minimum duration input 1`] = `
+Object {
+  "-": 13,
+  "errorCode": 99996,
+  "message": "Error Bad Request",
+}
+`;
+
+exports[`@skillAcademyWeb @negative Get List of Courses As a Guest, I should not be able to see the list of available courses with invalid minimum duration input 2`] = `
+Object {
+  "-": 13,
+  "errorCode": 99996,
+  "message": "Error Bad Request",
+}
+`;
+
+exports[`@skillAcademyWeb @negative Get List of Courses As a Guest, I should not be able to see the list of available courses with invalid minimum price input 1`] = `
+Object {
+  "-": 13,
+  "errorCode": 99996,
+  "message": "Error Bad Request",
+}
+`;
+
+exports[`@skillAcademyWeb @negative Get List of Courses As a Guest, I should not be able to see the list of available courses with invalid page input 1`] = `
+Object {
+  "-": 13,
+  "errorCode": 99996,
+  "message": "Error Bad Request",
+}
+`;
+
+exports[`@skillAcademyWeb @negative Get List of Courses As a Guest, I should not be able to see the list of available courses with invalid page size input 1`] = `
+Object {
+  "-": 13,
+  "errorCode": 99996,
+  "message": "Error Bad Request",
+}
+`;
+
+exports[`@skillAcademyWeb @negative Get List of Courses As a Guest, I should not be able to see the list of available courses without maximum price input 1`] = `
+Object {
+  "-": 13,
+  "errorCode": 99996,
+  "message": "Error Bad Request",
+}
+`;
+
+exports[`@skillAcademyWeb @negative Get List of Courses As a Guest, I should not be able to see the list of available courses without minimum duration input 1`] = `
+Object {
+  "-": 13,
+  "errorCode": 99996,
+  "message": "Error Bad Request",
+}
+`;
+
+exports[`@skillAcademyWeb @negative Get List of Courses As a Guest, I should not be able to see the list of available courses without minimum price input 1`] = `
+Object {
+  "-": 13,
+  "errorCode": 99996,
+  "message": "Error Bad Request",
+}
+`;

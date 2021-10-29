@@ -1,0 +1,20 @@
+{
+    "type": "object",
+    "properties": {
+      "-": {
+        "type": "integer"
+      },
+      "errorCode": {
+        "type": "integer"
+      },
+      "message": {
+        "type": "string"
+      }
+    },
+    "additionalProperties": false,
+    "required": [
+      "-",
+      "errorCode",
+      "message"
+    ]
+  }

@@ -1,0 +1,24 @@
+{
+  "scripts": {
+    "test": "jest --config ./jest.config.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^26.6.3",
+    "chai": "^4.3.4",
+    "chai-sorted": "^0.2.0",
+    "dotenv": "^10.0.0",
+    "eslint": "^7.13.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "jest": "^26.6.3",
+    "jest-expect-message": "^1.0.2",
+    "jest-html-reporters": "^2.1.2",
+    "jest-json-schema": "^2.1.0",
+    "supertest": "^6.1.6"
+  }
+}
