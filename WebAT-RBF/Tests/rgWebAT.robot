@@ -6,7 +6,7 @@ Test Setup  globalkey.Begin Web Test
 Test Teardown  globalkey.End Web Test
 
 # Copy/paste the line below into Terminal to execute:
-# python -m robot -d results tests/amazon.robot
+# python -m robot -d results tests/rgWebAT.robot
 
 *** Variables ***
 
