@@ -68,11 +68,11 @@ PriceDesc
     Click Element  ${SearchBtn}
     Wait Until Page Contains Element  ${FirstSearchRes}
     Press Keys  ${DropDownField}  H  A  R  G  A  SPACE  T  E  R  T  ENTER
-    Wait Until Page Contains Element  ${PriceWrapper1}
-    ${Price1}  Get Text  ${PriceWrapper1}
+    Wait Until Page Contains Element  ${PriceWrapperSpec1}
+    ${Price1}  Get Text  ${PriceWrapperSpec1}
     ${Price1}  Remove String  ${Price1}  R  p  .
     ${Price1}  Convert To Number  ${Price1}
-    ${Price2}  Get Text  ${PriceWrapper2}
+    ${Price2}  Get Text  ${PriceWrapperSpec2}
     ${Price2}  Remove String  ${Price2}  R  p  .
     ${Price2}  Convert To Number  ${Price2}
     Should Be True  ${Price1} >= ${Price2}

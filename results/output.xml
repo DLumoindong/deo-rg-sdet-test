@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.7.9 on win32)" generated="20211030 00:09:17.082" rpa="false" schemaversion="2">
+<suite id="s1" name="rgWebAT" source="H:\development\deo-rg-sdet-test\WebAT-RBF\tests\rgWebAT.robot">
+<test id="s1-t1" name="Check search features">
+<kw name="Begin Web Test" library="globalkey" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211030 00:09:17.297" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211030 00:09:21.000" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20211030 00:09:21.000" endtime="20211030 00:09:21.000"/>
+</kw>
+<msg timestamp="20211030 00:09:21.018" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 90
+Current browser version is 95.0.4638.54 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+</msg>
+<status status="FAIL" starttime="20211030 00:09:17.296" endtime="20211030 00:09:21.018"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20211030 00:09:21.018" endtime="20211030 00:09:21.018"/>
+</kw>
+<status status="FAIL" starttime="20211030 00:09:17.296" endtime="20211030 00:09:21.019"/>
+</kw>
+<kw name="End Web Test" library="globalkey" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211030 00:09:21.020" endtime="20211030 00:09:21.021"/>
+</kw>
+<status status="PASS" starttime="20211030 00:09:21.020" endtime="20211030 00:09:21.021"/>
+</kw>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20211030 00:09:17.295" endtime="20211030 00:09:21.021">Setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 90
+Current browser version is 95.0.4638.54 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+</status>
+</test>
+<test id="s1-t2" name="Check sort features">
+<kw name="Begin Web Test" library="globalkey" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211030 00:09:21.024" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211030 00:09:24.104" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20211030 00:09:24.104" endtime="20211030 00:09:24.104"/>
+</kw>
+<msg timestamp="20211030 00:09:24.105" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 90
+Current browser version is 95.0.4638.54 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+</msg>
+<status status="FAIL" starttime="20211030 00:09:21.023" endtime="20211030 00:09:24.105"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20211030 00:09:24.105" endtime="20211030 00:09:24.105"/>
+</kw>
+<status status="FAIL" starttime="20211030 00:09:21.023" endtime="20211030 00:09:24.106"/>
+</kw>
+<kw name="End Web Test" library="globalkey" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211030 00:09:24.108" endtime="20211030 00:09:24.108"/>
+</kw>
+<status status="PASS" starttime="20211030 00:09:24.107" endtime="20211030 00:09:24.108"/>
+</kw>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20211030 00:09:21.022" endtime="20211030 00:09:24.108">Setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 90
+Current browser version is 95.0.4638.54 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+</status>
+</test>
+<test id="s1-t3" name="Check filter features">
+<kw name="Begin Web Test" library="globalkey" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211030 00:09:24.110" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211030 00:09:27.191" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20211030 00:09:27.191" endtime="20211030 00:09:27.191"/>
+</kw>
+<msg timestamp="20211030 00:09:27.193" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 90
+Current browser version is 95.0.4638.54 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+</msg>
+<status status="FAIL" starttime="20211030 00:09:24.110" endtime="20211030 00:09:27.193"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20211030 00:09:27.193" endtime="20211030 00:09:27.193"/>
+</kw>
+<status status="FAIL" starttime="20211030 00:09:24.110" endtime="20211030 00:09:27.193"/>
+</kw>
+<kw name="End Web Test" library="globalkey" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211030 00:09:27.194" endtime="20211030 00:09:27.194"/>
+</kw>
+<status status="PASS" starttime="20211030 00:09:27.194" endtime="20211030 00:09:27.195"/>
+</kw>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20211030 00:09:24.110" endtime="20211030 00:09:27.195">Setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 90
+Current browser version is 95.0.4638.54 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+</status>
+</test>
+<doc>Search Feature Web Tests</doc>
+<status status="FAIL" starttime="20211030 00:09:17.082" endtime="20211030 00:09:27.197"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="3" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="0" fail="3" skip="0" id="s1" name="rgWebAT">rgWebAT</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
